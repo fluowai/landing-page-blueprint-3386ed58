@@ -41,14 +41,14 @@ export function Results() {
             com a Wooscale
           </h2>
 
-          <div className="mt-9 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-10 grid gap-5 sm:grid-cols-2">
             {metrics.map(({ icon: Icon, value, label }) => (
               <div key={value} className="rounded-xl border border-border bg-surface p-6 card-hover">
                 <div className="flex items-center gap-3">
                   <Icon className="h-5 w-5 text-primary" />
                   <span className="font-display text-3xl font-extrabold tracking-tight text-gradient-brand">{value}</span>
                 </div>
-                <p className="mt-3 text-xs leading-relaxed text-muted-foreground">{label}</p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{label}</p>
               </div>
             ))}
           </div>
