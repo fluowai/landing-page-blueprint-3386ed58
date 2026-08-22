@@ -65,23 +65,6 @@ export function Hero() {
             height={1024}
             className="w-full rounded-2xl object-cover"
           />
-          <div className="absolute inset-0 flex flex-col items-center justify-center gap-6 px-6 text-center">
-            <img
-              src={markAsset.url}
-              alt="Símbolo Wooscale"
-              width={512}
-              height={512}
-              className="w-1/2 drop-shadow-2xl"
-            />
-            <div>
-              <p className="font-display text-2xl font-semibold tracking-[0.25em] text-foreground sm:text-4xl">
-                WOO<span className="text-primary">S</span>CALE
-              </p>
-              <p className="mt-2 text-[10px] tracking-[0.32em] text-foreground/80 sm:text-xs">
-                ASSESSORIA <span className="text-primary">ESTRATÉGICA</span> 360°
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
