@@ -28,7 +28,7 @@ const testimonials = [
 
 export function Results() {
   const [active, setActive] = useState(0);
-  const item = testimonials[active];
+  const item = testimonials[active] ?? testimonials[0]!;
 
   return (
     <section id="cases" className="mx-auto max-w-7xl px-5 py-20">
