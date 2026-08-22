@@ -32,25 +32,26 @@ export function Method() {
     <section id="metodo" className="bg-light-band py-20 text-light-band-foreground">
       <div className="mx-auto max-w-7xl px-5">
         <p className="label-eyebrow text-center">Método ACP 360°</p>
-        <h2 className="mx-auto mt-4 max-w-3xl text-center font-display text-2xl font-bold text-light-band-foreground sm:text-4xl">
+        <h2 className="mx-auto mt-4 max-w-4xl text-center display-2 text-light-band-foreground">
           Um método. Quatro pilares. Resultados previsíveis.
         </h2>
 
         <div className="mt-14 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           {pillars.map(({ n, icon: Icon, title, text }, i) => (
-            <div key={n} className="relative flex flex-col items-center text-center">
-              <div className="relative flex h-24 items-center justify-center">
-                <span className="absolute -left-10 font-display text-6xl font-bold text-ghost-number">
-                  {n}
-                </span>
-                <Icon className="relative h-14 w-14 text-primary" strokeWidth={1.6} />
+            <div key={n} className="group relative flex flex-col items-center text-center">
+              <span className="font-display text-sm font-black tracking-[0.3em] text-primary">
+                {n}
+              </span>
+              <div className="relative mt-4 flex h-20 w-20 items-center justify-center rounded-2xl border border-light-band-muted/25 bg-background/[0.03] transition-transform duration-300 group-hover:-translate-y-1">
+                <Icon className="h-9 w-9 text-primary" strokeWidth={1.8} />
               </div>
-              <h3 className="mt-4 font-display text-sm font-bold tracking-widest text-light-band-foreground">
+              <h3 className="mt-6 font-display text-base font-extrabold uppercase tracking-[0.2em] text-light-band-foreground">
                 {title}
               </h3>
               <p className="mt-3 max-w-[15rem] text-sm leading-relaxed text-light-band-muted">
                 {text}
               </p>
+
               {i < pillars.length - 1 && (
                 <ChevronRight className="absolute -right-3 top-10 hidden h-5 w-5 text-light-band-muted/50 lg:block" />
               )}

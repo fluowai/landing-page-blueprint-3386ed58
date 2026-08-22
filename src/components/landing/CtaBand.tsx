@@ -9,10 +9,10 @@ export function CtaBand() {
             <CalendarDays className="h-7 w-7" />
           </span>
           <div>
-            <h2 className="font-display text-xl font-bold text-primary-foreground sm:text-2xl">
+            <h2 className="display-3 text-primary-foreground">
               Pronto para transformar esforço em crescimento?
             </h2>
-            <p className="mt-2 max-w-xl text-sm text-primary-foreground/80">
+            <p className="mt-3 max-w-xl text-base leading-relaxed text-primary-foreground/85">
               Agende um diagnóstico gratuito com nossos especialistas e descubra onde estão as
               maiores oportunidades do seu negócio.
             </p>
@@ -20,7 +20,7 @@ export function CtaBand() {
         </div>
         <a
           href="mailto:contato@wooscale.com.br"
-          className="inline-flex shrink-0 items-center gap-3 rounded-md bg-background px-6 py-4 text-xs font-bold tracking-wider text-foreground transition-opacity hover:opacity-90"
+          className="inline-flex shrink-0 items-center gap-3 rounded-lg bg-background px-7 py-4 text-[0.8rem] font-extrabold uppercase tracking-[0.12em] text-foreground transition-transform duration-300 hover:-translate-y-0.5"
         >
           AGENDAR MEU DIAGNÓSTICO GRATUITO
           <ArrowRight className="h-4 w-4" />

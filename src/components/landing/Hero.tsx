@@ -9,60 +9,63 @@ const perks = [
 
 export function Hero() {
   return (
-    <section id="home" className="relative overflow-hidden">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 lg:grid-cols-2 lg:py-24">
-        <div>
-          <p className="label-eyebrow">Assessoria Estratégica 360°</p>
-          <h1 className="mt-5 font-display text-4xl font-bold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+    <section id="home" className="relative overflow-hidden radial-spot">
+      <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 lg:grid-cols-2 lg:py-28">
+        <div className="reveal">
+          <p className="label-eyebrow inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5">
+            Assessoria Estratégica 360°
+          </p>
+          <h1 className="mt-6 display-1 text-foreground">
             Estratégia que transforma esforço em{" "}
-            <span className="text-primary">crescimento real.</span>
+            <span className="text-gradient-brand">crescimento real.</span>
           </h1>
-          <p className="mt-6 max-w-md text-sm leading-relaxed text-muted-foreground sm:text-base">
+          <p className="mt-7 max-w-xl lead">
             Potencializamos empresas com um método exclusivo que alinha marketing, vendas,
             tecnologia e processos para gerar resultados previsíveis e escaláveis.
           </p>
 
-          <div className="mt-9 flex flex-wrap items-center gap-4">
+          <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
               href="#contato"
-              className="inline-flex items-center gap-3 rounded-md bg-brand-gradient px-6 py-4 text-xs font-bold tracking-wider text-primary-foreground transition-opacity hover:opacity-90"
+              className="inline-flex items-center gap-3 rounded-lg bg-brand-gradient px-7 py-4 text-[0.8rem] font-extrabold uppercase tracking-[0.12em] text-primary-foreground shadow-brand-glow transition-transform duration-300 hover:-translate-y-0.5"
             >
-              AGENDAR DIAGNÓSTICO GRATUITO
+              Agendar diagnóstico gratuito
               <ArrowRight className="h-4 w-4" />
             </a>
             <a
               href="#metodo"
-              className="inline-flex items-center gap-3 rounded-md border border-border px-6 py-4 text-xs font-bold tracking-wider text-foreground transition-colors hover:border-primary"
+              className="inline-flex items-center gap-3 rounded-lg border border-border px-7 py-4 text-[0.8rem] font-extrabold uppercase tracking-[0.12em] text-foreground transition-colors duration-300 hover:border-primary hover:text-primary"
             >
               <span className="flex h-6 w-6 items-center justify-center rounded-full border border-primary text-primary">
                 <Play className="h-3 w-3 fill-current" />
               </span>
-              VER COMO FUNCIONA
+              Ver como funciona
             </a>
           </div>
 
-          <div className="mt-10 flex flex-wrap gap-8">
+          <div className="mt-12 flex flex-wrap gap-x-10 gap-y-6 border-t border-border pt-8">
             {perks.map(({ icon: Icon, title, sub }) => (
               <div key={title} className="flex items-center gap-3">
-                <span className="flex h-9 w-9 items-center justify-center rounded-md border border-primary/50 text-primary">
+                <span className="flex h-10 w-10 items-center justify-center rounded-lg border border-primary/40 bg-primary/10 text-primary">
                   <Icon className="h-4 w-4" />
                 </span>
-                <span className="text-xs leading-tight text-foreground">
+                <span className="text-sm font-semibold leading-tight text-foreground">
                   {title}
-                  <span className="block text-muted-foreground">{sub}</span>
+                  <span className="block text-xs font-normal text-muted-foreground">{sub}</span>
                 </span>
               </div>
             ))}
           </div>
         </div>
 
-        <div className="relative">
+        <div className="relative reveal [animation-delay:120ms]">
+          <div className="pointer-events-none absolute -inset-6 rounded-[2rem] bg-brand-gradient opacity-15 blur-3xl" />
           <img
             src={heroArt}
             alt="Curva de crescimento sobre skyline urbano"
             width={1024}
             height={1024}
-            className="w-full rounded-2xl object-cover"
+            className="relative w-full rounded-3xl border border-border object-cover"
           />
         </div>
       </div>

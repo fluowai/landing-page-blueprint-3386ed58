@@ -35,20 +35,20 @@ export function Results() {
       <div className="grid gap-12 lg:grid-cols-[1.1fr_1fr]">
         <div>
           <p className="label-eyebrow">Resultados que falam</p>
-          <h2 className="mt-4 font-display text-2xl font-bold leading-snug text-foreground sm:text-4xl">
+          <h2 className="mt-4 display-2 text-foreground">
             Empresas que escalaram
             <br />
             com a Wooscale
           </h2>
 
-          <div className="mt-9 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-10 grid gap-5 sm:grid-cols-2">
             {metrics.map(({ icon: Icon, value, label }) => (
-              <div key={value} className="rounded-xl border border-border bg-surface p-5">
+              <div key={value} className="rounded-xl border border-border bg-surface p-6 card-hover">
                 <div className="flex items-center gap-3">
                   <Icon className="h-5 w-5 text-primary" />
-                  <span className="font-display text-2xl font-bold text-foreground">{value}</span>
+                  <span className="font-display text-3xl font-extrabold tracking-tight text-gradient-brand">{value}</span>
                 </div>
-                <p className="mt-3 text-xs leading-relaxed text-muted-foreground">{label}</p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{label}</p>
               </div>
             ))}
           </div>
@@ -56,7 +56,7 @@ export function Results() {
 
         <div className="rounded-2xl border border-border bg-surface p-8">
           <Quote className="h-8 w-8 fill-current text-primary" />
-          <p className="mt-5 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
+          <p className="mt-5 font-display text-lg font-medium leading-relaxed tracking-tight text-foreground/90">{item.text}</p>
           <div className="mt-8 flex items-center gap-3">
             <span className="flex h-11 w-11 items-center justify-center rounded-full bg-muted font-display text-sm font-bold text-primary">
               {item.name.charAt(0)}

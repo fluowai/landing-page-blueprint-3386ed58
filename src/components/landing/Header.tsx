@@ -21,7 +21,7 @@ export function Header() {
         <a href="#home" className="flex items-center gap-3">
           <img src={markAsset.url} alt="Wooscale" width={40} height={40} className="h-10 w-10" />
           <span className="leading-none">
-            <span className="block font-display text-lg font-semibold tracking-[0.22em] text-foreground">
+            <span className="block font-display text-lg font-extrabold tracking-[0.22em] text-foreground">
               WOO<span className="text-primary">S</span>CALE
             </span>
             <span className="mt-1 block text-[9px] tracking-[0.3em] text-muted-foreground">

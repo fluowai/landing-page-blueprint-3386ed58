@@ -21,14 +21,14 @@ export function ProblemPromise() {
       <div className="grid items-center gap-10 rounded-2xl border border-border bg-surface p-8 sm:p-12 lg:grid-cols-[1fr_auto_1fr]">
         <div>
           <p className="label-eyebrow">O problema</p>
-          <h2 className="mt-4 font-display text-2xl font-bold leading-snug text-foreground sm:text-3xl">
+          <h2 className="mt-4 display-3 text-foreground">
             Muito esforço.
             <br />
             Pouco resultado.
           </h2>
           <ul className="mt-7 space-y-3">
             {problems.map((item) => (
-              <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground">
+              <li key={item} className="flex items-start gap-3 text-base text-muted-foreground">
                 <X className="mt-0.5 h-4 w-4 shrink-0 text-destructive" />
                 {item}
               </li>
@@ -46,14 +46,14 @@ export function ProblemPromise() {
 
         <div>
           <p className="label-eyebrow">A nossa promessa</p>
-          <h2 className="mt-4 font-display text-2xl font-bold leading-snug text-foreground sm:text-3xl">
+          <h2 className="mt-4 display-3 text-foreground">
             Estratégia certa.
             <br />
             Resultados reais.
           </h2>
           <ul className="mt-7 space-y-3">
             {promises.map((item) => (
-              <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground">
+              <li key={item} className="flex items-start gap-3 text-base text-muted-foreground">
                 <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                 {item}
               </li>
