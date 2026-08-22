@@ -32,7 +32,7 @@ export function Method() {
     <section id="metodo" className="bg-light-band py-20 text-light-band-foreground">
       <div className="mx-auto max-w-7xl px-5">
         <p className="label-eyebrow text-center">Método ACP 360°</p>
-        <h2 className="mx-auto mt-4 max-w-3xl text-center font-display text-2xl font-bold text-light-band-foreground sm:text-4xl">
+        <h2 className="mx-auto mt-4 max-w-4xl text-center display-2 text-light-band-foreground">
           Um método. Quatro pilares. Resultados previsíveis.
         </h2>
 
@@ -40,12 +40,12 @@ export function Method() {
           {pillars.map(({ n, icon: Icon, title, text }, i) => (
             <div key={n} className="relative flex flex-col items-center text-center">
               <div className="relative flex h-24 items-center justify-center">
-                <span className="absolute -left-10 font-display text-6xl font-bold text-ghost-number">
+                <span className="absolute -left-10 font-display text-7xl font-black tracking-tighter text-ghost-number">
                   {n}
                 </span>
                 <Icon className="relative h-14 w-14 text-primary" strokeWidth={1.6} />
               </div>
-              <h3 className="mt-4 font-display text-sm font-bold tracking-widest text-light-band-foreground">
+              <h3 className="mt-5 font-display text-base font-extrabold uppercase tracking-[0.2em] text-light-band-foreground">
                 {title}
               </h3>
               <p className="mt-3 max-w-[15rem] text-sm leading-relaxed text-light-band-muted">
