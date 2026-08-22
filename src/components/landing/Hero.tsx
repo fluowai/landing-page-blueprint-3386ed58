@@ -1,6 +1,5 @@
 import { ArrowRight, Play, ClipboardCheck, Target, BarChart3 } from "lucide-react";
 import heroArt from "@/assets/hero-growth.jpg";
-import markAsset from "@/assets/wooscale-mark.png.asset.json";
 
 const perks = [
   { icon: ClipboardCheck, title: "Diagnóstico 360°", sub: "gratuito" },
