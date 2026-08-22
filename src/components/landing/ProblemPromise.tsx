@@ -21,7 +21,7 @@ export function ProblemPromise() {
       <div className="grid items-center gap-10 rounded-2xl border border-border bg-surface p-8 sm:p-12 lg:grid-cols-[1fr_auto_1fr]">
         <div>
           <p className="label-eyebrow">O problema</p>
-          <h2 className="mt-4 display-2 text-foreground">
+          <h2 className="mt-4 display-3 text-foreground">
             Muito esforço.
             <br />
             Pouco resultado.
@@ -46,7 +46,7 @@ export function ProblemPromise() {
 
         <div>
           <p className="label-eyebrow">A nossa promessa</p>
-          <h2 className="mt-4 display-2 text-foreground">
+          <h2 className="mt-4 display-3 text-foreground">
             Estratégia certa.
             <br />
             Resultados reais.
