@@ -40,7 +40,7 @@ export function Method() {
           {pillars.map(({ n, icon: Icon, title, text }, i) => (
             <div key={n} className="relative flex flex-col items-center text-center">
               <div className="relative flex h-24 items-center justify-center">
-                <span className="absolute -left-2 font-display text-6xl font-bold text-ghost-number">
+                <span className="absolute -left-10 font-display text-6xl font-bold text-ghost-number">
                   {n}
                 </span>
                 <Icon className="relative h-14 w-14 text-primary" strokeWidth={1.6} />

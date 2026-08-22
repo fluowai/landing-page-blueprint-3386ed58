@@ -21,7 +21,7 @@ const socials = [Instagram, Linkedin, Facebook, Youtube];
 export function Footer() {
   return (
     <footer id="blog" className="border-t border-border bg-surface">
-      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 md:grid-cols-2 lg:grid-cols-5">
+      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 md:grid-cols-2 lg:grid-cols-6">
         <div className="lg:col-span-2">
           <div className="flex items-center gap-3">
             <img src={markAsset.url} alt="Wooscale" width={40} height={40} className="h-10 w-10" />
