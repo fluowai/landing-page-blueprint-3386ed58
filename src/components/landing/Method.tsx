@@ -38,19 +38,20 @@ export function Method() {
 
         <div className="mt-14 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           {pillars.map(({ n, icon: Icon, title, text }, i) => (
-            <div key={n} className="relative flex flex-col items-center text-center">
-              <div className="relative flex h-24 items-center justify-center">
-                <span className="pointer-events-none absolute inset-0 flex items-center justify-center font-display text-[5.5rem] font-black leading-none tracking-tighter text-ghost-number">
-                  {n}
-                </span>
-                <Icon className="relative h-14 w-14 text-primary drop-shadow-sm" strokeWidth={1.6} />
+            <div key={n} className="group relative flex flex-col items-center text-center">
+              <span className="font-display text-sm font-black tracking-[0.3em] text-primary">
+                {n}
+              </span>
+              <div className="relative mt-4 flex h-20 w-20 items-center justify-center rounded-2xl border border-light-band-muted/25 bg-background/[0.03] transition-transform duration-300 group-hover:-translate-y-1">
+                <Icon className="h-9 w-9 text-primary" strokeWidth={1.8} />
               </div>
-              <h3 className="mt-5 font-display text-base font-extrabold uppercase tracking-[0.2em] text-light-band-foreground">
+              <h3 className="mt-6 font-display text-base font-extrabold uppercase tracking-[0.2em] text-light-band-foreground">
                 {title}
               </h3>
               <p className="mt-3 max-w-[15rem] text-sm leading-relaxed text-light-band-muted">
                 {text}
               </p>
+
               {i < pillars.length - 1 && (
                 <ChevronRight className="absolute -right-3 top-10 hidden h-5 w-5 text-light-band-muted/50 lg:block" />
               )}
